@@ -1,4 +1,6 @@
 import { IRestData } from './../../index.interface'
+import  * as Users from './users'
+import {Settings} from './settings'
 export const paths:IRestData[] = [
     {
         description:'all repository actions endpoint',
@@ -8,5 +10,9 @@ export const paths:IRestData[] = [
             res.send('yo!')
         }
     },
-
+    Users.GetAllUsers,
+    Users.GetUserById,
+    Users.UserSetings,
+    Users.UserRouts,
+    Settings
 ];
